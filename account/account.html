@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="../minecraft.png" id="logo">
+        <ul>
+            <li><a href="../Home/index.html" class="nav" onclick="home_event(event)">HOME</a></li>
+            <li><a href="#" class="nav">GAMES</a></li>
+            <li><a href="../shop/shop.html" class="nav" onclick="shop_event(event)">SHOP</a></li>
+            <li><a href="../news/news.html" class="nav" onclick="news_event(event)">NEWS</a></li>
+            <li><a href="../support/support.html" class="nav" onclick="support_event(event)">SUPPORT</a></li>
+        </ul>
+        <a href="#"><button id="account"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/minecraft-grass-cube.png" alt="minecraft-grass-cube"style="height: 50px;width: 60px;">Account</button></a>
+    </div>
+    <div class="main">
+        <h1>Create &nbsp;&nbsp;Account</h1>
+        <label style="margin-top: 40px;">Email</label>
+        <br>
+        <input type="email" required>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" required>
+        <br>
+        <button type="submit" id="create">CREATE</button>
+        <br>
+        <span class="acc">Already have account?<span class="ac">Sign in</span></span>
+    </div>
+</body>
+</html>

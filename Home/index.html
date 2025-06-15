@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="../minecraft.png" id="logo">
+        <ul>
+            <li><a href="#" class="nav">HOME</a></li>
+            <li><a href="../games/games.html" class="nav" onclick="handleLinkClick(event)">GAMES</a></li>
+            <li><a href="../shop/shop.html" class="nav" onclick="shop_event(event)">SHOP</a></li>
+            <li><a href="../news/news.html" class="nav" onclick="news_event(event)">NEWS</a></li>
+            <li><a href="../support/support.html" class="nav" onclick="support_event(event)">SUPPORT</a></li>
+        </ul>
+        <a href="../account/account.html"><button id="account" onclick="account_event(event)"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/minecraft-grass-cube.png" alt="minecraft-grass-cube"style="height: 50px;width: 60px;">Account</button></a>
+    </div>
+    <div class="hero-section">
+        <img src="https://www.pngplay.com/wp-content/uploads/11/Minecraft-PNG-HD-Free-File-Download.png" class="hero-img">
+        <div class="content">
+            <h1 id="main-head">Build. Create. Destroy.</h1>
+        <p id="sub-head">Explore the world of Blocks</p>
+        <button id="try-now">Try - Now</button>
+        </div>
+    </div>
+
+      <script>
+     function handleLinkClick(event) {
+  event.preventDefault();
+  const page = document.querySelector(".content");
+  const image= document.querySelector(".hero-img")
+  page.classList.add("slide-out");
+  image.classList.add("slide-right");
+  setTimeout(() => {
+    window.location.href = "../games/games.html";
+  }, 2000); 
+}
+
+function shop_event(event) {
+  event.preventDefault();
+  const page = document.querySelector(".content");
+  const image= document.querySelector(".hero-img")
+  page.classList.add("slide-out");
+  image.classList.add("slide-right");
+  setTimeout(() => {
+    window.location.href = "../shop/shop.html";
+  }, 2000); 
+}
+
+function news_event(event) {
+  event.preventDefault();
+  const page = document.querySelector(".content");
+  const image= document.querySelector(".hero-img")
+  page.classList.add("slide-out");
+  image.classList.add("slide-right");
+  setTimeout(() => {
+    window.location.href = "../news/news.html";
+  }, 2000); 
+}
+
+function support_event(event) {
+  event.preventDefault();
+  const page = document.querySelector(".content");
+  const image= document.querySelector(".hero-img")
+  page.classList.add("slide-out");
+  image.classList.add("slide-right");
+  setTimeout(() => {
+    window.location.href = "../support/support.html";
+  }, 2000); 
+}
+
+function account_event(event) {
+  event.preventDefault();
+  const page = document.querySelector(".content");
+  const image= document.querySelector(".hero-img")
+  page.classList.add("slide-out");
+  image.classList.add("slide-right");
+  setTimeout(() => {
+    window.location.href = "../account/account.html";
+  }, 2000); 
+}
+  </script>
+</body>
+</html>
+

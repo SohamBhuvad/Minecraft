@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'minecraft';
+}
+
+@font-face {
+      font-family: 'minecraft';
+      src: url(minecraft_font.ttf);
+    }
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://i.pinimg.com/736x/40/0f/db/400fdb4ee56de2d20f5481f41bdc8106.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#logo{
+    height: 200px;
+    margin: 0px 0px 0px 50px;
+}
+
+.navbar{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    gap: 10vh;
+}
+
+.nav{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    font-size: 50px;
+    gap: 10vh;
+    margin-top: 4vh;
+    font-weight: bold;
+    color: white;
+}
+
+#account{
+    background-color: white;
+    color: black;
+    border: 5px solid;
+    height: 90px;
+    width: 300px;
+    font-size: 30px;
+    margin-top: 2.5vh;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-section{
+    background-color: aeblue;
+    width: 100%;
+    height: 85vh;
+    color: black;
+    position: relative;
+}
+
+
+#main-head{
+    font-size: 100px;
+}
+
+#sub-head{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+#try-now{
+    background-color: transparent;
+    margin-top: 50px;
+    height: 100px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: url(https://i.redd.it/lrpfvxhyr1u51.gif);
+    background-size: cover;
+}
+
+
+.content{
+    width: 1000px;
+    margin-top: 25vh;
+    margin-left: 20vh;
+    position: absolute;
+    color: white;
+    animation: slide-right 2s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+    from{
+        margin-left: 0vh;
+        opacity: 0;
+    }
+    to{
+        margin-left: 20vh;
+        opacity: 1;
+    }
+}
+
+.slide-out{
+    animation: slide-left 2s forwards;
+}
+
+@keyframes slide-left{
+    to{
+        margin-left: 0vh;
+        opacity: 0;
+    }
+}
+
+.hero-img{
+    float: right;
+    height: 1000px;
+    margin-top: 10vh;
+    margin-right: 5vh;
+    position: absolute;
+    right: 0;
+    animation: slide 2s ease-in-out forwards;
+}
+
+@keyframes slide{
+    from{
+        margin-right: 0vh;
+        opacity: 0;
+    }
+    to{
+        margin-right: 5vh;
+        opacity: 1;
+    }
+}
+
+.slide-right{
+    animation: slide-right-2 2s forwards;
+}
+
+@keyframes slide-right-2{
+    to{
+        margin-right: 0vh;
+        opacity: 0;
+    }
+}
