@@ -62,17 +62,26 @@ ul{
 }
 
 .main{
-    background-color: ;
     width: 1000px;
-    height: 1100px;
+    height: 900px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 250px;
     color: white;
+    animation: account 2s ease-in-out forwards;
+}
+
+@keyframes account{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 h1{
-    padding: 40px 0px 30px 50px;
-    font-size: 50px;
+    padding: 40px 0px 30px 90px;
+    font-size: 70px;
     color: white;
 }
 
@@ -94,11 +103,13 @@ input{
 
 #create{
     height: 100px;
-    width: 700px;
+    width: 750px;
     margin: 30px;
-    font-size: 30px;
-    border: 0px solid transparent;
+    font-size: 40px;
+    border: 5px solid white;
     font-weight: bold;
+    background: transparent;
+    color: white;
 }
 
 .acc{
@@ -110,3 +121,5 @@ input{
     font-weight: bolder;
     text-decoration: underline;
 }
+
+
